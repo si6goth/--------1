@@ -1,8 +1,10 @@
+import datetime
 from faker import Faker
 
 # Инициализируем Faker с русской локалью
 fake = Faker('ru_RU')
 
+print(f"Текущая дата: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 print("--- Генерация одиночных случайных данных ---")
 # Случайное полное имя (зависит от пола)
 print(f"Имя: {fake.name()}")
