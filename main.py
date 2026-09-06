@@ -10,7 +10,7 @@ from faker import Faker
 # Инициализируем Faker с русской локалью
 random_data = Faker('ru_RU')
 
-print(f"Текущая дата: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+print(f"ТЕКУЩАЯ ДАТА: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 print("--- Генерация одиночных случайных данных ---")
 # Случайное полное имя (зависит от пола)
 print(f"Имя: {random_data.name()}")
